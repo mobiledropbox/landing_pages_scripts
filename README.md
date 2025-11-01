@@ -5,11 +5,9 @@ This repository is intended for installing Chocolatey on your Windows computer, 
 ```
 aeronje/
 └──chocolatey_setup/
-    ├── README.md
+    ├── index.js
     ├── aeronje_style_chocolatey_setup.ps1
-    ├── index.html
-    └── assets/
-        └── images/
+    └── README.md
 ```
 # Panuto
 ```Instructions in Filipino language```
@@ -52,3 +50,4 @@ PS C:\Users\donna\Downloads> .\aeronje_style_chocolatey_setup.ps1
 
 # Tech content
 You may watch [TC5](https://web.facebook.com/share/v/1CukzS4a56/) for more context. ```The video is in Filipino language```
+
