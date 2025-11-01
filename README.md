@@ -47,6 +47,20 @@ Removing ```class``` attribute still allows the image to render for as long as n
 ```
 These tags use [jsDelivr](https://cdn.jsdelivr.net) CDN to load external resources instead of local files to improve accessibility and reducing load time.
 
+# Vercel CDN hosted repos rewrite rule
+Most repositories are deployed via Vercel CDN using a JavaScript proxy ```index.js``` as the facade that serves as the presenter for each landing page.
+
+The script is typically located inside the api folder of each repository, which is why URLs often include the ```/api``` path.
+
+The sample JSON snippet below demonstrates how to rewrite URLs to present a more conventional and clean-looking address when accessing the landing page.
+```
+[
+  { "source": "/", "destination": "/api/index" },
+  { "source": "/communities", "destination": "/api/communities" }
+]
+```
+Any vercel.json file should be saved in the root or main directory of the repository whenever hosting via CDN is required.
+
 # Taglish tolonges gedli etneb version
 Itong repository na ito ay para lang sa scripts at style assets — hindi ito para sa code review o flex-fest, bes. 
 Hiwalay ito sa main codebase para mas malinis at mas madali i-maintain. 
