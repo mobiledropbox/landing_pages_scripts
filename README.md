@@ -61,6 +61,24 @@ The sample JSON snippet below demonstrates how to rewrite URLs to present a more
 ```
 Any vercel.json file should be saved in the root or main directory of the repository whenever hosting via CDN is required.
 
+# Dropbox public API url
+Taking advantage of public API url files like images and videos iuf this is for direct download purposes in Dropbox is a game changer.
+
+**Do not proceed with these steps if you do not wish to make this file public**
+
+1. Upload the file to Dropbox.
+2. Make sure it shared to public.
+3. Find the option for share and obtain the permalink 'Copy link' or somewhere that says 'Who has access' then set it to 'Anyone with link'.
+4. You should get a sample permalink like this
+```
+https://www.dropbox.com/scl/fi/d7f623kj8uvdo8yr3jkzt/filname.png?rlkey=4piejew3f0ap8vgsrz0yxg7xk&st=qu4yr5cm&dl=0
+```
+Change the '0' to '1'
+```
+https://www.dropbox.com/scl/fi/d7f623kj8uvdo8yr3jkzt/filname.png?rlkey=4piejew3f0ap8vgsrz0yxg7xk&st=qu4yr5cm&dl=1
+```
+5. This will now be your downloadable public API url from Dropbox.
+   
 # Taglish tolonges gedli etneb version
 Itong repository na ito ay para lang sa scripts at style assets — hindi ito para sa code review o flex-fest, bes. 
 Hiwalay ito sa main codebase para mas malinis at mas madali i-maintain. 
