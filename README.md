@@ -67,7 +67,7 @@ Taking advantage of public API url files like images and videos for direct downl
 **Do not proceed with these steps if you do not wish to make the file accessible in public**
 
 1. Upload the file to Dropbox.
-2. Make sure it shared to public.
+2. Make sure it is shared to public.
 3. Find the option for share and obtain the permalink 'Copy link' or somewhere that says 'Who has access' then set it to 'Anyone with link'.
 4. You should get a sample permalink like this
 ```
