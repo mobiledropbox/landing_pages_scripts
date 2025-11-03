@@ -62,7 +62,7 @@ The sample JSON snippet below demonstrates how to rewrite URLs to present a more
 Any vercel.json file should be saved in the root or main directory of the repository whenever hosting via CDN is required.
 
 # Dropbox public API url
-Taking advantage of public API url files like images and videos iuf this is for direct download purposes in Dropbox is a game changer.
+Taking advantage of public API url files like images and videos for direct download purposes in Dropbox is a game changer.
 
 **Do not proceed with these steps if you do not wish to make the file accessible in public**
 
