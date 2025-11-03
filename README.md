@@ -64,7 +64,7 @@ Any vercel.json file should be saved in the root or main directory of the reposi
 # Dropbox public API url
 Taking advantage of public API url files like images and videos iuf this is for direct download purposes in Dropbox is a game changer.
 
-**Do not proceed with these steps if you do not wish to make this file public**
+**Do not proceed with these steps if you do not wish to make the file accessible in public**
 
 1. Upload the file to Dropbox.
 2. Make sure it shared to public.
