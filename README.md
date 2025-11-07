@@ -9,6 +9,8 @@ mobiledropbox
     │   └── images/
     │       ├── aeronje.jpg
     │       └── metafacebook.jpg
+    ├── pte2022
+    │       └── pte_english_result_penones_2022.pdf
     ├── chocolatey_setup/
     │   ├── index.html
     │   ├── main.js
@@ -21,7 +23,11 @@ mobiledropbox
         └── styles.css
 ```
 # Sample tags inserted to index.html hosted via CDN
-
+**For ```anchor hypertext reference <a href>``` files**
+Instead of using anchor hypertext reference mapped to a local path/folder, you can now take advantage of using  [jsDelivr](https://cdn.jsdelivr.net)
+```
+<a href="https://cdn.jsdelivr.net/gh/profile_name/repository_name@main/folder_name/filename.pdf" target="_blank" rel="noopener">
+```
 **For ```<img>``` files**
 Who does not love a little performance boost and flexing a clean HTML tag?
 Here is how you can serve your images straight from your GitHub repo like a boss — via [jsDelivr](https://cdn.jsdelivr.net).
@@ -92,4 +98,3 @@ Kahit mag-PR ka pa ng sampung beses sa barangay niyo, hindi ko yan i-me-merge be
 You can always find ways to reach out if in case you need clarification, mobiledropbox is a contributor account created by [aeronje](https://github.com/aeronje), responsbile for major branching, committing and pushing to origin.
 
 The sole maintainer is still [aeronje](https://github.com/aeronje), so please reach out if you need further context.
-
