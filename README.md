@@ -11,6 +11,8 @@ mobiledropbox
     │       └── metafacebook.jpg
     ├── pte2022
     │       └── pte_english_result_penones_2022.pdf
+     ├── hourofcode2025
+    │       └── hour_of_code_certificate-official.jpg
     ├── chocolatey_setup/
     │   ├── index.html
     │   ├── main.js
