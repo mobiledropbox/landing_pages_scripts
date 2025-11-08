@@ -1,7 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="refresh" content="0; url=chrome://gpu/">
+  <meta charset="UTF-8">
+  <title>google_chrome_gpu_adjustments</title>
+  <script>
+    window.onload = function() {
+      // Dalawang tab mag-o-open isa para sa gpu console tapos isa para sa flags.
+      window.open("chrome://gpu/", "_blank");
+      window.open("chrome://flags/", "_blank");
+      // Magpapakita iyong landing page sobrang saglit then redirecting na agad sa dalawang tab na mag-o-open.
+      setTimeout(() => window.close(), 1000);
+    };
+  </script>
 </head>
 <body>
 <p><strong>Hindi ko alam bes kung bakit nakikita mo ito at bakit ni-open mo pa ito,
