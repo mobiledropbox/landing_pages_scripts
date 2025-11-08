@@ -3,15 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>google_chrome_gpu_adjustments</title>
-  <script>
-    window.onload = function() {
-      // Dalawang tab mag-o-open isa para sa gpu console tapos isa para sa flags.
-      window.open("chrome://gpu/", "_blank");
-      window.open("chrome://flags/", "_blank");
-    };
-  </script>
 </head>
 <body>
+    <h3>Click below to open diagnostics pages:</h3>
+    <button onclick="window.open('chrome://gpu/')">Open GPU Page</button>
+    <button onclick="window.open('chrome://flags/')">Open Flags Page</button>
 <p><strong>Hindi ko alam bes kung bakit nakikita mo ito at bakit ni-open mo pa ito,
 <br>
 pero ang silbi lang nito is maging bahagi ng launcher ni <a href="https://github.com/aeronje/google_chrome_gpu_adjustments/" target="_blank" rel="noopener noreferrer">aeronje/google_chrome_gpu_adjustments</a> repository.
