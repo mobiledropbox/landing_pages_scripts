@@ -25,6 +25,10 @@ mobiledropbox
         └── styles.css
 ```
 # Sample tags inserted to index.html hosted via CDN
+**Purging  outdated content or code for CDN URLs**
+You may access [jsdelivr purge tool](https://www.jsdelivr.com/tools/purge) when any changes require a instant or brute updates instead of waiting hours.
+Cache is one of the problems, it is very important to take advantage of this tool.
+
 **For ```anchor hypertext reference <a href>``` files**
 Instead of using anchor hypertext reference mapped to a local path/folder, you can now take advantage of using  [jsDelivr](https://cdn.jsdelivr.net)
 ```
