@@ -13,16 +13,7 @@
         Bes, panoorin mong mabuti iyong video na iyan patungkol sa
         <a href="https://github.com/aeronje/google_chrome_gpu_adjustments" target="_blank"> google_chrome_gpu_adjustments </a> 
         of aeronje.
-      <video 
-        id="mobileAutoplay" <!-- Nasa line 47 ang dahilan kung bakit may ni-declare akong id element dito -->
-        controls
-        autoplay
-        muted
-        loop
-        playsinline
-        style="max-width: 100%; height: auto; display: block; margin: 20px auto; border-radius: 10px;">
-        <source src="https://aeronjegithubdownloads.vercel.app/api/download?url=https%3A%2F%2Fwww.dropbox.com%2Fscl%2Ffi%2F13phm3qwq57bogdpfv609%2Fgoogle_chrome_gpu_adjustments.mp4%3Frlkey%3Ddrsbqosqwaqitqkndyn2q496w%26st%3Dq4kezjtv%26dl%3D1&filename=google_chrome_gpu_adjustments.mp4" type="video/mp4">
-      </video>
+       <div id="watch-btn-container"></div> <!-- Ni-declared ko ang watch button sa script na nakasulat sa line 38 -->
     </div>
   </main>
 
@@ -43,7 +34,7 @@
       </a>
     </div>
   </footer>
-  <!-- Ang script sa baba ay sinulat ko para ayusin ang mga mobile browser autoplay issues -->
-  <script src="https://cdn.jsdelivr.net/gh/mobiledropbox/landing_pages_scripts@main/google_chrome_gpu_adjustments/mobileAutoplay.js"></script>
+  <!-- Ang script sa baba ay sinulat ko para sa Watch video button -->
+  <script src="https://cdn.jsdelivr.net/gh/mobiledropbox/landing_pages_scripts@main/google_chrome_gpu_adjustments/scripts/watchButton.js"></script>
 </body>
 </html>
