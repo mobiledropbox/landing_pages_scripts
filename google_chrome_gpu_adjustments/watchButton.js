@@ -22,10 +22,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Kapag ni-click mo iyong "Watch video" ay magkakaroon ng redirection sa bagong page.
   watchBtn.addEventListener("click", () => {
-    window.open(
-      "https://cdn.jsdelivr.net/gh/mobiledropbox/landing_pages_scripts@main/google_chrome_gpu_adjustments/playVideo.html",
-      "_blank",
-      "noopener,noreferrer"
+    window.open( //gumamit ako ng https://rawcdn.githack.com kasi magbubukas ito ng panibagong static page.
+    "https://rawcdn.githack.com/mobiledropbox/landing_pages_scripts/main/google_chrome_gpu_adjustments/playVideo.html",
+    "_blank",
+    "noopener,noreferrer"
     );
   });
 
