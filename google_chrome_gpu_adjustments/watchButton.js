@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Kapag ni-click mo iyong "Watch video" ay magkakaroon ng redirection sa bagong page.
   watchBtn.addEventListener("click", () => {
     window.open(
-    "https://aeronjegithubdownloads.vercel.app/google_chrome_gpu_adjustments",
+    "https://pub-65b233cb109b43168e1acb43aafc213b.r2.dev/google_chrome_gpu_adjustments/google_chrome_gpu_adjustments.mp4",
     "_blank",
     "noopener,noreferrer"
     );
