@@ -3,15 +3,16 @@
 import { videoUrl } from "https://cdn.jsdelivr.net/gh/mobiledropbox/landing_pages_scripts@main/google_chrome_gpu_adjustments/videoUrl.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  const card = document.querySelector(".card");
-  if (!card) return;
 
-  // Ito iyong gagawa ng watch button.
+  const container = document.getElementById("watch-btn-container"); // Ito iyong class na declared sa google_chrome_gpu.html
+  if (!container) return;
+
+  // Dito po ginagawa in the background iyong watch button.
   const watchBtn = document.createElement("button");
   watchBtn.textContent = "🎥 Watch video";
   watchBtn.className = "watch-btn";
 
-  // Kolorete pampa-arte tang ina!
+  // Kolorete pampa-arte tangina!
   Object.assign(watchBtn.style, {
     padding: "12px 20px",
     fontSize: "16px",
@@ -25,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     transition: "background 0.3s ease, transform 0.2s ease"
   });
 
-  // Isa pang kolorete pampa-arte pak!
+  // Kolorete ulit pak!
   watchBtn.addEventListener("mouseenter", () => {
     watchBtn.style.background = "#155d8b";
     watchBtn.style.transform = "scale(1.05)";
@@ -36,10 +37,10 @@ document.addEventListener("DOMContentLoaded", () => {
     watchBtn.style.transform = "scale(1)";
   });
 
-  // Nasa videoUrl.js ang public link ng google_chrome_gpu_adjustments.mp4
+  // Dito nire-redirect para mapanood iyong video as long na iyong url na declared sa videoUrl.js ay valid and publicly accessible.
   watchBtn.addEventListener("click", () => {
     window.open(videoUrl, "_blank", "noopener,noreferrer");
   });
 
-  card.appendChild(watchBtn);
+  container.appendChild(watchBtn);
 });
