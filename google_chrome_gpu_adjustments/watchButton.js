@@ -22,8 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Kapag ni-click mo iyong "Watch video" ay magkakaroon ng redirection sa bagong page.
   watchBtn.addEventListener("click", () => {
-    window.open( //gumamit ako ng https://rawcdn.githack.com kasi magbubukas ito ng panibagong static page.
-    "https://rawcdn.githack.com/mobiledropbox/landing_pages_scripts/main/google_chrome_gpu_adjustments/playVideo.html",
+    window.open(
+    "https://aeronjegithubdownloads.vercel.app/google_chrome_gpu_adjustments",
     "_blank",
     "noopener,noreferrer"
     );
