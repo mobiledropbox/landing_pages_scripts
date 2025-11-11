@@ -1,23 +1,25 @@
 // Ron Penones | November 11th 2025 - Feel free to share and reproduce, the core idea is mine with some assistance of AI. Padayon!
 // Gumamit ako ng plyr.js.
 
-document.addEventListener("DOMContentLoaded", () => {
-  const playerElement = document.getElementById("player");
-  if (!playerElement) return;
+import { videoUrl } from './videoUrl.js';
 
-  const player = new Plyr(playerElement, {
+document.addEventListener("DOMContentLoaded", () => {
+  const video = document.getElementById("player");
+
+  // Sa background gumagawa ng source element.
+  const source = document.createElement("source");
+  source.src = videoUrl;
+  source.type = "video/mp4";
+
+  video.appendChild(source);
+
+  // Dito po nag-initialize si Plyr after adding source.
+  const player = new Plyr("#player", {
     controls: [
-      "play-large",
-      "play",
-      "progress",
-      "current-time",
-      "mute",
-      "volume",
-      "fullscreen",
-      "pip",
-      "settings"
+      'play-large', 'play', 'progress', 'current-time',
+      'mute', 'volume', 'settings', 'fullscreen'
     ],
-    settings: ["speed"],
-    ratio: "16:9"
   });
+
+  console.log("Video source loaded dynamically from videoUrl.js");
 });
