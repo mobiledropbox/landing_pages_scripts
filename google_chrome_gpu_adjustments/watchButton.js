@@ -1,32 +1,44 @@
 // Ron Penones | November 11th 2025 - Feel free to share and reproduce, the core idea is mine with some assistance of AI. Padayon!
 
+import { videoUrl } from "https://cdn.jsdelivr.net/gh/mobiledropbox/landing_pages_scripts@main/google_chrome_gpu_adjustments/videoUrl.js";
+
 document.addEventListener("DOMContentLoaded", () => {
   const card = document.querySelector(".card");
   if (!card) return;
 
-
+  // Ito iyong gagawa ng watch button.
   const watchBtn = document.createElement("button");
   watchBtn.textContent = "🎥 Watch video";
-  watchBtn.className = "watch-btn"; // Ito iyong ni-declared na id sa line 16 ng google_chrome_gpu.html
+  watchBtn.className = "watch-btn";
 
-  // Mga kolorete para pak!
-  watchBtn.style.padding = "12px 20px";
-  watchBtn.style.fontSize = "16px";
-  watchBtn.style.fontWeight = "600";
-  watchBtn.style.border = "none";
-  watchBtn.style.borderRadius = "10px";
-  watchBtn.style.cursor = "pointer";
-  watchBtn.style.background = "#1d72b8";
-  watchBtn.style.color = "#fff";
-  watchBtn.style.marginTop = "15px";
+  // Kolorete pampa-arte tang ina!
+  Object.assign(watchBtn.style, {
+    padding: "12px 20px",
+    fontSize: "16px",
+    fontWeight: "600",
+    border: "none",
+    borderRadius: "10px",
+    cursor: "pointer",
+    background: "#1d72b8",
+    color: "#fff",
+    marginTop: "15px",
+    transition: "background 0.3s ease, transform 0.2s ease"
+  });
 
-  // Kapag ni-click mo iyong "Watch video" ay magkakaroon ng redirection sa bagong page.
+  // Isa pang kolorete pampa-arte pak!
+  watchBtn.addEventListener("mouseenter", () => {
+    watchBtn.style.background = "#155d8b";
+    watchBtn.style.transform = "scale(1.05)";
+  });
+
+  watchBtn.addEventListener("mouseleave", () => {
+    watchBtn.style.background = "#1d72b8";
+    watchBtn.style.transform = "scale(1)";
+  });
+
+  // Nasa videoUrl.js ang public link ng google_chrome_gpu_adjustments.mp4
   watchBtn.addEventListener("click", () => {
-    window.open(
-    "https://pub-65b233cb109b43168e1acb43aafc213b.r2.dev/google_chrome_gpu_adjustments/google_chrome_gpu_adjustments.mp4",
-    "_blank",
-    "noopener,noreferrer"
-    );
+    window.open(videoUrl, "_blank", "noopener,noreferrer");
   });
 
   card.appendChild(watchBtn);
