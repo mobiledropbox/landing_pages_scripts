@@ -1,0 +1,26 @@
+/* General favicon sizing and behavior */
+link[rel="icon"],
+link[rel="shortcut icon"] {
+  width: 32px;
+  height: 32px;
+}
+
+/* Optional: Dark mode adjustment kung gusto mo consistent look */
+@media (prefers-color-scheme: dark) {
+  link[rel="icon"],
+  link[rel="shortcut icon"] {
+    filter: brightness(1.2);
+  }
+}
+
+/* Optional: animation pag gusto mo may konting life */
+@keyframes faviconPulse {
+  0% { filter: brightness(1); }
+  50% { filter: brightness(1.5); }
+  100% { filter: brightness(1); }
+}
+
+/* Apply subtle animation (optional) */
+html[data-favicon-animate="true"] link[rel="icon"] {
+  animation: faviconPulse 3s infinite ease-in-out;
+}
