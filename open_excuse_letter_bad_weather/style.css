@@ -1,3 +1,5 @@
+/* Ron Penones | November 14th 2025 - Feel free to share and reproduce, the core idea is mine with some assistance of AI. Padayon! */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 body {
@@ -202,15 +204,13 @@ footer {
 }
 
 .disclaimer-modal-content {
-  position: relative;
+  max-width: 700px;
+  max-height: 85vh;
+  overflow-y: auto;
+  margin: 5vh auto;
+  padding: 2rem;
   background: #fff;
   border-radius: 10px;
-  max-width: 700px;
-  max-height: 85vh;     /* para hindi putol november14th2025 */
-  overflow-y: auto;      /* para scrollable if mahaba november14th2025 */
-  margin: 5vh auto;      /* para mas center vertically november14th2025 */
-  padding: 2rem;         /* mas breathable november14th2025 */
-  z-index: 1000;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
@@ -224,8 +224,6 @@ footer {
 }
 
 .disclaimer-markdown-body {
-  max-height: 60vh;
-  overflow-y: auto;
   line-height: 1.6;
 }
 
