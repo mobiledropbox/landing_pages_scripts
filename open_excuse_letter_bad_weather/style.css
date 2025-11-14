@@ -205,9 +205,11 @@ footer {
   position: relative;
   background: #fff;
   border-radius: 10px;
-  max-width: 600px;
-  margin: 10vh auto;
-  padding: 20px;
+  max-width: 700px;
+  max-height: 85vh;     /* para hindi putol november14th2025 */
+  overflow-y: auto;      /* para scrollable if mahaba november14th2025 */
+  margin: 5vh auto;      /* para mas center vertically november14th2025 */
+  padding: 2rem;         /* mas breathable november14th2025 */
   z-index: 1000;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
