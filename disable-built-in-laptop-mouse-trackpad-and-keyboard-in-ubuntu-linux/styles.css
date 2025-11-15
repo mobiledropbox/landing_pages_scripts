@@ -1,3 +1,5 @@
+/* Ron Penones | November 15th 2025 - Feel free to share and reproduce, the core idea is mine with some assistance of AI. Padayon! */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 body {
@@ -169,4 +171,102 @@ footer {
   .download-btn {
     width: 100%;
   }
+}
+
+/* ==== Disclaimer Modal Styles ==== */
+
+.disclaimer-btn {
+padding: 10px 18px;
+border: none;
+border-radius: 8px;
+font-size: 0.95rem;
+cursor: pointer;
+background: #0077ff;
+color: white;
+transition: 0.2s ease-in-out;
+}
+
+.disclaimer-btn:hover {
+background: #005fcc;
+transform: translateY(-1px);
+}
+
+.disclaimer-modal {
+position: fixed;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+background: rgba(0,0,0,0.55);
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 9999;
+}
+
+.disclaimer-modal-content {
+width: 90%;
+max-width: 700px;
+background: #ffffff;
+padding: 20px;
+border-radius: 12px;
+max-height: 85vh;
+overflow-y: auto;
+box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+position: relative;
+}
+
+.disclaimer-close-btn {
+position: absolute;
+top: 10px;
+right: 10px;
+border: none;
+background: transparent;
+font-size: 1.8rem;
+cursor: pointer;
+color: #444;
+}
+
+.disclaimer-close-btn:hover {
+color: #000;
+}
+
+.disclaimer-text {
+font-family: Arial, sans-serif;
+font-size: 0.95rem;
+line-height: 1.5;
+color: #222;
+}
+
+.md-btn {
+  display: block;
+  padding: 14px 18px;
+  margin: 12px 0;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.md-btn.success {
+  background: #e3ffe3;
+  border: 2px solid #28a745;
+  color: #065f1a;
+}
+
+.md-btn.success:hover {
+  background: #c6ffc6;
+}
+
+.md-btn.warning {
+  background: #fff7d8;
+  border: 2px solid #e3b400;
+  color: #7a5c00;
+}
+
+.md-btn.warning:hover {
+  background: #ffefb3;
 }
