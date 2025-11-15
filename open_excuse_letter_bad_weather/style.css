@@ -238,6 +238,39 @@ line-height: 1.5;
 color: #222;
 }
 
+.md-btn {
+  display: block;
+  padding: 14px 18px;
+  margin: 12px 0;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.md-btn.success {
+  background: #e3ffe3;
+  border: 2px solid #28a745;
+  color: #065f1a;
+}
+
+.md-btn.success:hover {
+  background: #c6ffc6;
+}
+
+.md-btn.warning {
+  background: #fff7d8;
+  border: 2px solid #e3b400;
+  color: #7a5c00;
+}
+
+.md-btn.warning:hover {
+  background: #ffefb3;
+}
+
 /* ==== Excuse Letter Modal Styles ==== */
 .excuse-btn {
   background: #0077ff;
