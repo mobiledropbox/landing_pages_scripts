@@ -7,7 +7,7 @@ if (!btn) return;
 
 btn.addEventListener('click', async () => {
 try {
-const res = await fetch('https://cdn.jsdelivr.net/gh/aeronje/landing_pages_scripts@main/disable-built-in-laptop-mouse-trackpad-and-keyboard-in-ubuntu-linux/disclaimer.md');
+const res = await fetch('https://cdn.jsdelivr.net/gh/mobiledropbox/landing_pages_scripts@main/disable-built-in-laptop-mouse-trackpad-and-keyboard-in-ubuntu-linux/disclaimer.md');
 if (!res.ok) throw new Error('Unable to load disclaimer.md');
 
 
