@@ -2,15 +2,15 @@
 
 const buttons = [
   { id: "downloadBtn1", file: "https://cdn.jsdelivr.net/gh/mobiledropbox/landing_pages_scripts@main/ai_powered_freelancing_capstone/dayone.md" },
-  { id: "downloadBtn1", file: "https://cdn.jsdelivr.net/gh/mobiledropbox/landing_pages_scripts@main/ai_powered_freelancing_capstone/daytwo.md" },
-  { id: "downloadBtn1", file: "https://cdn.jsdelivr.net/gh/mobiledropbox/landing_pages_scripts@main/ai_powered_freelancing_capstone/daythree.md" },
-  { id: "downloadBtn1", file: "https://cdn.jsdelivr.net/gh/mobiledropbox/landing_pages_scripts@main/ai_powered_freelancing_capstone/dayfour.md" },
-  { id: "downloadBtn1", file: "https://cdn.jsdelivr.net/gh/mobiledropbox/landing_pages_scripts@main/ai_powered_freelancing_capstone/dayfive.md" },
-  { id: "downloadBtn1", file: "https://cdn.jsdelivr.net/gh/mobiledropbox/landing_pages_scripts@main/ai_powered_freelancing_capstone/daysix.md" },
-  { id: "downloadBtn1", file: "https://cdn.jsdelivr.net/gh/mobiledropbox/landing_pages_scripts@main/ai_powered_freelancing_capstone/dayseven.md" },
-  { id: "downloadBtn1", file: "https://cdn.jsdelivr.net/gh/mobiledropbox/landing_pages_scripts@main/ai_powered_freelancing_capstone/dayeight.md" },
-  { id: "downloadBtn1", file: "https://cdn.jsdelivr.net/gh/mobiledropbox/landing_pages_scripts@main/ai_powered_freelancing_capstone/daynine.md" },
-  { id: "downloadBtn1", file: "https://cdn.jsdelivr.net/gh/mobiledropbox/landing_pages_scripts@main/ai_powered_freelancing_capstone/dayten.md" }
+  { id: "downloadBtn2", file: "https://cdn.jsdelivr.net/gh/mobiledropbox/landing_pages_scripts@main/ai_powered_freelancing_capstone/daytwo.md" },
+  { id: "downloadBtn3", file: "https://cdn.jsdelivr.net/gh/mobiledropbox/landing_pages_scripts@main/ai_powered_freelancing_capstone/daythree.md" },
+  { id: "downloadBtn4", file: "https://cdn.jsdelivr.net/gh/mobiledropbox/landing_pages_scripts@main/ai_powered_freelancing_capstone/dayfour.md" },
+  { id: "downloadBtn5", file: "https://cdn.jsdelivr.net/gh/mobiledropbox/landing_pages_scripts@main/ai_powered_freelancing_capstone/dayfive.md" },
+  { id: "downloadBtn6", file: "https://cdn.jsdelivr.net/gh/mobiledropbox/landing_pages_scripts@main/ai_powered_freelancing_capstone/daysix.md" },
+  { id: "downloadBtn7", file: "https://cdn.jsdelivr.net/gh/mobiledropbox/landing_pages_scripts@main/ai_powered_freelancing_capstone/dayseven.md" },
+  { id: "downloadBtn8", file: "https://cdn.jsdelivr.net/gh/mobiledropbox/landing_pages_scripts@main/ai_powered_freelancing_capstone/dayeight.md" },
+  { id: "downloadBtn9", file: "https://cdn.jsdelivr.net/gh/mobiledropbox/landing_pages_scripts@main/ai_powered_freelancing_capstone/daynine.md" },
+  { id: "downloadBtn10", file: "https://cdn.jsdelivr.net/gh/mobiledropbox/landing_pages_scripts@main/ai_powered_freelancing_capstone/dayten.md" }
 ];
 
 const overlay = document.getElementById("dialogOverlay");
