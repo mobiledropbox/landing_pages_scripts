@@ -4,4 +4,4 @@ You can watch the [behind-the-scenes video](https://pub-59b2b96ee6544b7ab59e5304
 
 [Aeron John Penones](https://www.linkedin.com/in/ron-penones-241728247/)
 
-**November 17th 2025**
+**November 18th 2025**
