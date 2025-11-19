@@ -1,0 +1,54 @@
+/* Ron Penones | November 19th 2025 - Feel free to share and reproduce, the core idea is mine with some assistance of AI. Padayon! */
+
+/* BACKDROP */
+.disclaimer-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  z-index: 9999;
+}
+
+/* CONTENT CARD */
+.disclaimer-modal-content {
+  background: #111;
+  color: #eee;
+  width: 100%;
+  max-width: 480px;
+  max-height: 80vh;
+  overflow-y: auto;
+  border-radius: 12px;
+  padding: 24px 20px;
+  position: relative;
+
+  /* Prevent iyong content from touching edges */
+  box-sizing: border-box;
+}
+
+/* CLOSE BUTTON */
+.disclaimer-close-btn {
+  position: sticky;      /* ← para laging kita kahit mag-scroll */
+  top: 0;
+  right: 0;
+  margin-left: auto;
+  display: block;
+
+  background: transparent;
+  color: #fff;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  padding: 4px 8px;
+  z-index: 10000;
+}
+
+/* MOBILE TWEAK */
+@media (max-width: 480px) {
+  .disclaimer-modal-content {
+    padding: 20px 16px;
+    max-height: 85vh;
+  }
+}
