@@ -1,0 +1,277 @@
+/* Ron Penones | November 19th 2025 - Feel free to share and reproduce, the core idea is mine with some assistance of AI. Padayon! */
+
+:root{
+  --bg: linear-gradient(135deg,#0f172a 0%, #0b1220 100%);
+  --card-bg: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  --accent1: #7c3aed;
+  --accent2: #06b6d4;
+  --glass: rgba(255,255,255,0.04);
+}
+
+* { box-sizing: border-box }
+
+/* PAGE LAYOUT */
+body {
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, Segoe UI, Roboto, Helvetica, Arial;
+  min-height: 100vh;
+  background: var(--bg);
+
+  display: flex;
+  flex-direction: column;   /* vertical layout */
+  justify-content: flex-start; /* content starts TOP */
+  align-items: center;
+
+  padding: 32px;
+  color: #e6eef8;
+}
+
+
+.page {
+  width: 100%;
+  max-width: 980px;
+
+  flex: 1;                 /*  pushes footer down naturally */
+  display: flex;
+  flex-direction: column;  /*  ensures the card stays top */
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* CARD */
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  background: var(--card-bg);
+  border: 1px solid rgba(255,255,255,0.04);
+  padding: 18px;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+  backdrop-filter: blur(6px);
+}
+
+.card-media {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(124,58,237,0.12);
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+.plyr { width: 100% }
+
+.title { font-size: 1.6rem; margin: 0 0 6px }
+.subtitle { margin: 0 0 12px; opacity: 0.9 }
+
+.controls { display: flex; gap: 12px }
+
+.btn {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn.like {
+  background: linear-gradient(90deg, var(--accent1), var(--accent2));
+  color: #081226;
+}
+
+.btn.comment {
+  background: transparent;
+  color: #e6eef8;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.comment-form { margin-top: 12px }
+
+.comment-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.04);
+  background: transparent;
+  color: inherit;
+}
+
+.comment-actions { display: flex; gap: 8px; margin-top: 8px }
+
+.btn.submit {
+  background: var(--accent2);
+  color: #031022;
+}
+
+.btn.cancel {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+.hidden { display: none }
+.notice { margin-top: 12px; font-size: 0.95rem; opacity: 0.9 }
+
+/* DESKTOP LAYOUT */
+@media (min-width:900px){
+  .card { grid-template-columns: 1fr 420px }
+}
+
+/* ============================
+   IG-STYLE VIDEO WRAPPER
+=============================== */
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  aspect-ratio: 9 / 16;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ============================
+         MODAL SYSTEM
+=============================== */
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(4px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.05);
+  width: 95%;
+  max-width: 420px;
+  box-shadow: 0 8px 35px rgba(2,6,23,0.7);
+}
+
+.modal-header {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+.modal-close {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.08);
+  color: #e6eef8;
+  padding: 8px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.modal-backdrop.active { display: flex }
+
+/* ============================
+             FOOTER
+=============================== */
+
+footer {
+  width: 100%;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-left img {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 2px solid #8be9fd;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.footer-left img:hover { transform: scale(1.1) }
+
+.footer-left small {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.footer-name {
+  color: #8be9fd;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* CENTER */
+.disclaimer-btn {
+  padding: 0.45rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.disclaimer-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* RIGHT SIDE */
+.fb-link {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+}
+
+.fb-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #1877f2;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fb-img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #1877f2;
+}
+
+.fb-link small {
+  font-size: 0.85rem;
+  color: white;
+  opacity: 0.9;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
