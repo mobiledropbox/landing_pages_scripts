@@ -17,20 +17,26 @@ body {
   font-family: Inter, ui-sans-serif, system-ui, Segoe UI, Roboto, Helvetica, Arial;
   min-height: 100vh;
   background: var(--bg);
+
   display: flex;
-  flex-direction: column;      /* ← THIS IS IMPORTANT */
+  flex-direction: column;   /* vertical layout */
+  justify-content: flex-start; /* content starts TOP */
   align-items: center;
+
   padding: 32px;
   color: #e6eef8;
 }
 
+
 .page {
   width: 100%;
   max-width: 980px;
-  flex: 1;                     /* ← allows footer to stay bottom */
+
+  flex: 1;                 /*  pushes footer down naturally */
   display: flex;
+  flex-direction: column;  /*  ensures the card stays top */
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 /* CARD */
