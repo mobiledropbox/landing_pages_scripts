@@ -1,0 +1,38 @@
+/* Ron Penones | November 19th 2025 - Feel free to share and reproduce, the core idea is mine with some assistance of AI. Padayon! */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+.modal-content {
+    background: #111;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 480px;
+    width: 90%;
+    color: #fff;
+}
+
+.modal-body a {
+    color: #4aa3ff;
+    text-decoration: underline;
+}
+
+.modal-body img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 12px auto;
+  border-radius: 10px;
+}
+
+.modal-close {
+    margin-top: 10px;
+    padding: 6px 12px;
+}
