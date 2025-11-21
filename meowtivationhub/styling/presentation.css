@@ -37,3 +37,47 @@ border-radius: 6px;
 font-size: 16px;
 }
 button:hover { background: #666; }
+
+/* Viewer container */
+#viewerContainer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Canvas */
+#pdfCanvas {
+  display: block;
+  margin: auto;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+/* Selectable & clickable text layer */
+#textLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: auto;
+  color: transparent;
+  mix-blend-mode: multiply;
+}
+
+/* Controls */
+#controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+#controls button {
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
